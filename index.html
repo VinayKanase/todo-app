@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO-APP</title>
+    <link rel="shortcut icon" href="../odin.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="./bundle.js"></script>
+  </head>
+  <body>
+    <div class="mainWrapper flex">
+      <header>
+        <nav class="flex justfy-space-between direction-column">
+          <h1 class="mainHeading">
+            Todo App
+            <hr width="60px" />
+          </h1>
+          <ul class="nav_list">
+            <li class="navItem today_Nav active">Today</li>
+            <li class="navItem calender_Nav">Calendar</li>
+            <li class="navItem notes_Nav">Notes</li>
+          </ul>
+          <div class="projectsHeading">
+            <hr />
+            <h2>Projects</h2>
+            <hr />
+          </div>
+          <ul id="projectsWrapper">
+          </ul>
+          <button id="AddNewProjectBtn" class="btn-normal heading-icon">
+            <i class="fa fa-plus"></i>
+            Add New Project
+          </button>
+        </nav>
+        <div class="absolute flex justfy-space-between align-center aboveNav">
+          <div class="datedaymonth flex align-center">
+            <h2 id="todayDate"></h2>
+            <div>
+              <h3 id="thisMonth"></h3>
+              <h4 id="toDay"></h4>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="hamburger">
+              <i class="fa fa-navicon"></i>
+            </button>
+            <button class="settings_btn">
+              <i class="fa fa-ellipsis-h"></i>
+              <ul class="settings">
+                </li>
+                <li id="theme">
+                  Change Theme
+                </li>
+                <li id="clearLocalStorage">
+                  <i class="fa fa-trash"></i>
+                  Clear All
+                </li>
+              </ul>
+            </button>
+          </div>
+        </div>
+        <div class="absolute flex center add" id="add">
+          <i class="fa fa-plus"></i>
+        </div>
+      </header>
+      <div id="content">
+        <section id="today">
+          <h2 class="heading">Today Tasks</h2>
+          <div class="cont_wrapper">
+          
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="bg" class=""></div>
+    <!-- bg -->
+    <div id="modal"></div>
+  </body>
+</html>
