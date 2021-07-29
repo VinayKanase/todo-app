@@ -1,4 +1,5 @@
 import '../css/style.css';
+import '../assets/icon.png';
 import { getMonth, ValidateForm } from './Helper';
 import { PageManager,CreateTaskToDOM, UpdatePage, closeModal } from './UIManager';
 import { confirmModal, Form as ModalForm } from './modals'; 
